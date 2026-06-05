@@ -10,7 +10,7 @@ export function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-5">
             <a href="#home" className="flex items-center gap-2">
-              <span className="grid place-items-center w-10 h-10 rounded-xl bg-[var(--gradient-gold)] text-navy font-display text-lg font-bold">
+              <span className="grid place-items-center w-10 h-10 rounded-xl bg-gradient-gold text-navy font-display text-lg font-bold">
                 M
               </span>
               <span className="font-display text-xl">
@@ -41,7 +41,7 @@ export function Footer() {
               />
               <button
                 type="submit"
-                className="rounded-full bg-[var(--gradient-gold)] px-5 py-2 text-sm font-medium text-navy"
+                className="rounded-full bg-gradient-gold px-5 py-2 text-sm font-medium text-navy"
               >
                 Subscribe
               </button>

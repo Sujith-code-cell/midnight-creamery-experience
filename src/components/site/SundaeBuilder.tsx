@@ -111,7 +111,7 @@ export function SundaeBuilder() {
                 <button
                   type="button"
                   onClick={() => toast.success("Sundae added to cart", { description: `${base.name} · $${total}.00` })}
-                  className="rounded-full bg-[var(--gradient-gold)] px-6 py-3 text-sm font-medium text-navy hover:-translate-y-0.5 transition"
+                  className="rounded-full bg-gradient-gold px-6 py-3 text-sm font-medium text-navy hover:-translate-y-0.5 transition"
                 >
                   Add to Cart
                 </button>
@@ -154,7 +154,7 @@ export function SundaeBuilder() {
                         onClick={() => toggleTop(t.id)}
                         className={`inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm transition ${
                           active
-                            ? "bg-[var(--gradient-gold)] text-navy"
+                            ? "bg-gradient-gold text-navy"
                             : "glass-strong text-foreground hover:bg-white/10"
                         }`}
                       >
@@ -174,7 +174,7 @@ export function SundaeBuilder() {
                     type="button"
                     onClick={() => setSauce(null)}
                     className={`rounded-full px-4 py-2 text-sm transition ${
-                      sauce === null ? "bg-[var(--gradient-gold)] text-navy" : "glass-strong hover:bg-white/10"
+                      sauce === null ? "bg-gradient-gold text-navy" : "glass-strong hover:bg-white/10"
                     }`}
                   >
                     None
@@ -186,7 +186,7 @@ export function SundaeBuilder() {
                       onClick={() => setSauce(s.id)}
                       className={`rounded-full px-4 py-2 text-sm transition ${
                         sauce === s.id
-                          ? "bg-[var(--gradient-gold)] text-navy"
+                          ? "bg-gradient-gold text-navy"
                           : "glass-strong hover:bg-white/10"
                       }`}
                     >

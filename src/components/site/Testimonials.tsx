@@ -88,7 +88,7 @@ export function Testimonials() {
                     aria-label={`Go to review ${n + 1}`}
                     onClick={() => setI(n)}
                     className={`h-1.5 rounded-full transition-all ${
-                      n === i ? "w-8 bg-[var(--gradient-gold)]" : "w-2 bg-white/20"
+                      n === i ? "w-8 bg-gradient-gold" : "w-2 bg-white/20"
                     }`}
                   />
                 ))}

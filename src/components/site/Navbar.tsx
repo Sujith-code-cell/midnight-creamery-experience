@@ -35,7 +35,7 @@ export function Navbar() {
           aria-label="Primary"
         >
           <a href="#home" className="flex items-center gap-2 group">
-            <span className="relative grid place-items-center w-9 h-9 rounded-xl bg-[var(--gradient-gold)] text-navy font-display text-lg font-bold shadow-[0_0_30px_-5px_var(--gold-glow)]">
+            <span className="relative grid place-items-center w-9 h-9 rounded-xl bg-gradient-gold text-navy font-display text-lg font-bold shadow-[0_0_30px_-5px_var(--gold-glow)]">
               M
               <span className="absolute inset-0 rounded-xl ring-1 ring-white/30" />
             </span>
@@ -49,7 +49,7 @@ export function Navbar() {
               <li key={l.href}>
                 <a
                   href={l.href}
-                  className="relative px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors after:absolute after:left-4 after:right-4 after:bottom-1 after:h-px after:scale-x-0 after:origin-left after:bg-[var(--gradient-gold)] after:transition-transform hover:after:scale-x-100"
+                  className="relative px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors after:absolute after:left-4 after:right-4 after:bottom-1 after:h-px after:scale-x-0 after:origin-left after:bg-gradient-gold after:transition-transform hover:after:scale-x-100"
                 >
                   {l.label}
                 </a>
@@ -60,7 +60,7 @@ export function Navbar() {
           <div className="flex items-center gap-2">
             <a
               href="#flavors"
-              className="hidden sm:inline-flex items-center gap-2 rounded-full bg-[var(--gradient-gold)] px-4 py-2 text-sm font-medium text-navy hover:opacity-90 transition shadow-[0_0_30px_-8px_var(--gold-glow)]"
+              className="hidden sm:inline-flex items-center gap-2 rounded-full bg-gradient-gold px-4 py-2 text-sm font-medium text-navy hover:opacity-90 transition shadow-[0_0_30px_-8px_var(--gold-glow)]"
             >
               <ShoppingBag className="w-4 h-4" />
               Order
