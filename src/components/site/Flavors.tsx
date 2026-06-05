@@ -78,7 +78,7 @@ export function Flavors() {
                   <button
                     type="button"
                     onClick={() => toast.success(`${f.name} added to cart`, { description: `$${f.price}.00 · 1 jar` })}
-                    className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[var(--gradient-gold)] px-5 py-2.5 text-sm font-medium text-navy opacity-90 hover:opacity-100 transition"
+                    className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-gold px-5 py-2.5 text-sm font-medium text-navy opacity-90 hover:opacity-100 transition"
                   >
                     <Plus className="w-4 h-4" />
                     Add to Cart

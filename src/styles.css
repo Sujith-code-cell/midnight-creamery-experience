@@ -146,6 +146,10 @@
   box-shadow: 0 0 60px -10px oklch(0.78 0.16 75 / 0.45);
 }
 
+@utility bg-gradient-gold {
+  background-image: var(--gradient-gold);
+}
+
 @keyframes float {
   0%, 100% { transform: translateY(0) rotate(0deg); }
   50% { transform: translateY(-20px) rotate(3deg); }

@@ -57,7 +57,7 @@ export function Hero() {
           <div className="mt-10 flex flex-wrap gap-3 animate-fade-up [animation-delay:360ms]">
             <a
               href="#flavors"
-              className="group relative inline-flex items-center gap-2 rounded-full bg-[var(--gradient-gold)] px-7 py-3.5 text-sm font-medium text-navy shadow-[0_10px_40px_-10px_var(--gold-glow)] transition hover:-translate-y-0.5 hover:shadow-[0_20px_60px_-10px_var(--gold-glow)]"
+              className="group relative inline-flex items-center gap-2 rounded-full bg-gradient-gold px-7 py-3.5 text-sm font-medium text-navy shadow-[0_10px_40px_-10px_var(--gold-glow)] transition hover:-translate-y-0.5 hover:shadow-[0_20px_60px_-10px_var(--gold-glow)]"
             >
               Explore Flavors
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -114,7 +114,7 @@ export function Hero() {
 
             {/* Floating glass chips */}
             <div className="absolute -left-6 top-10 hidden sm:flex items-center gap-3 rounded-2xl glass-strong px-4 py-3 animate-float">
-              <div className="h-9 w-9 rounded-full bg-[var(--gradient-gold)]" />
+              <div className="h-9 w-9 rounded-full bg-gradient-gold" />
               <div>
                 <p className="text-xs text-muted-foreground">Tonight's pick</p>
                 <p className="text-sm font-medium">Midnight Chocolate</p>

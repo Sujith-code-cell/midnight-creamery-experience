@@ -87,7 +87,7 @@ export function Contact() {
               </div>
               <button
                 type="submit"
-                className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-[var(--gradient-gold)] px-6 py-3.5 text-sm font-medium text-navy hover:-translate-y-0.5 transition disabled:opacity-50"
+                className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-gradient-gold px-6 py-3.5 text-sm font-medium text-navy hover:-translate-y-0.5 transition disabled:opacity-50"
                 disabled={sent}
               >
                 {sent ? "Sent — thank you" : "Send message"}
