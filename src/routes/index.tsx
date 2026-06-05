@@ -1,29 +1,65 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Toaster } from "sonner";
+import { Navbar } from "@/components/site/Navbar";
+import { Hero } from "@/components/site/Hero";
+import { Flavors } from "@/components/site/Flavors";
+import { Experience } from "@/components/site/Experience";
+import { FlavorOfDay } from "@/components/site/FlavorOfDay";
+import { Gallery } from "@/components/site/Gallery";
+import { Testimonials } from "@/components/site/Testimonials";
+import { Stats } from "@/components/site/Stats";
+import { SundaeBuilder } from "@/components/site/SundaeBuilder";
+import { Contact } from "@/components/site/Contact";
+import { Footer } from "@/components/site/Footer";
+import { CursorGlow } from "@/components/site/CursorGlow";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Midnight Creamery — Crafted for Midnight Cravings" },
+      {
+        name: "description",
+        content:
+          "Small-batch artisanal ice cream made with extraordinary ingredients and unforgettable flavors. Crafted in Brooklyn, served after dark.",
+      },
+      { property: "og:title", content: "Midnight Creamery — Crafted for Midnight Cravings" },
+      {
+        property: "og:description",
+        content:
+          "Small-batch artisanal ice cream made with extraordinary ingredients and unforgettable flavors.",
+      },
+      { property: "og:type", content: "website" },
+    ],
+    links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300..700&display=swap",
+      },
     ],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      <CursorGlow />
+      <Navbar />
+      <main>
+        <Hero />
+        <Flavors />
+        <Experience />
+        <FlavorOfDay />
+        <SundaeBuilder />
+        <Gallery />
+        <Stats />
+        <Testimonials />
+        <Contact />
+      </main>
+      <Footer />
+      <Toaster theme="dark" position="bottom-right" />
+    </>
   );
 }
